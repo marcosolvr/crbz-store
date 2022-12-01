@@ -73,4 +73,25 @@
       font-size: 11px;
     }
   }
+
+  @media (max-width:$mobile) {
+    &__container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+    }
+
+    &__location {
+      margin-bottom: 16px;
+    }
+
+    &__contact,
+    &__tags-block {
+      margin: 0 auto;
+    }
+
+    &__tags-block {
+      gap: 86px;
+    }
+  }
 }
