@@ -1,0 +1,76 @@
+@import "../../styles/Tema.module.scss";
+
+.footer {
+  background: black;
+  color: white;
+  padding: 25px 0;
+  
+  &__container {
+    @extend %container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  &__location {
+    h3 {
+      font-size: 1.4rem;
+      position: relative;
+      margin-bottom: 38px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 52px;
+        height: 5px;
+        left: 0;
+        bottom: -16px;
+        background: white;
+      }
+    }
+
+    p {
+      line-height: 25px;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 195px;
+    height: 38px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    background: white;
+    color: black;
+    padding: 0 17px;
+    text-transform: uppercase;
+
+    svg {
+      min-width: 20px;
+    }
+  }
+
+  &__tags-block {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__tag {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    span {
+      font-size: 11px;
+    }
+  }
+}
