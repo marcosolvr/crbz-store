@@ -1,4 +1,5 @@
 @import url('https://use.typekit.net/eyy4lrv.css');
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
 
 * {
   box-sizing: border-box;
