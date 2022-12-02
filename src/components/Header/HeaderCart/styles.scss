@@ -1,0 +1,27 @@
+
+@import '../../../styles/variaveis';
+
+.header-cart {
+  width: 38px;
+  position: relative;
+  cursor: pointer;
+
+  svg {
+    vertical-align: sub;
+  }
+
+  &__quantity-block {
+    position: absolute;
+    width: 18px;
+    background: $red;
+    border-radius: 50%;
+    top: 0;
+    right: -10px;
+  }
+
+  &__quantity {
+    font-size: 10px;
+    line-height: 0;
+    color: white;
+  }
+}

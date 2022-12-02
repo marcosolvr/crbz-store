@@ -1,0 +1,42 @@
+@import "../../styles/breakpoints";
+@import "../../styles/variaveis";
+
+.header {
+  height: 80px;
+
+  @media (min-width: $mobile) {
+    &__menu--mobile,
+    &__search--mobile {
+      display: none;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__logo {
+    flex: 2;
+  }
+
+  &__search--descktop {
+    flex: 4;
+    margin-right: 44px;
+  }
+
+  &__account {
+    flex: 1;
+
+    a {
+      color: $darkest-grey;
+    }
+
+    svg {
+      vertical-align: sub;
+      margin-right: 6px;
+    }
+  }
+}

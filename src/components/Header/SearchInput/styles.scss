@@ -1,0 +1,27 @@
+@import '../../../styles/variaveis.scss';
+
+.search-input {
+  display: flex;
+  border-bottom: 1px solid $dark-grey;
+  position: relative;
+
+  input {
+    width: 100%;
+    border: 1px solid transparent;
+    padding: 4px 24px 4px 4px;
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $black;
+    }
+  }
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
