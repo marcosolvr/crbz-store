@@ -24,6 +24,7 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    color: $dark;
     
     &-block {
       display: flex;
@@ -49,14 +50,11 @@
     color: white;
     height: 50px;
     font-weight: 700;
+    font-size: 14px;
   }
 
   &__signup-sucess {
     text-align: center;
-
-    p {
-      color: $dark;
-    }
 
     button {
       margin-top: 16px;
@@ -105,6 +103,32 @@
 
     &__message {
       visibility: hidden;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    height: fit-content;
+
+    h2 {
+      font-size: 20px;
+    }
+
+    &__form-block {
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__input,
+    &__button {
+      width: 284px;
+    }
+
+    &__signup-sucess {
+      button {
+        width: 100%;
+        max-width: 288px;
+      }
     }
   }
 }
