@@ -1,0 +1,110 @@
+@import '../../styles/breakpoints.scss';
+@import '../../styles/variaveis.scss';
+
+.newsletter {
+  background: $light-grey;
+  padding: 24px 0 16px 0;
+  height: 146px;
+  
+  h2,
+  h3,
+  p,
+  span,
+  input,
+  button {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  h2 {
+    font-size: 22px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    
+    &-block {
+      display: flex;
+      gap: 8px;
+    }
+  }
+
+  &__input,
+  &__button {
+    border-radius: 5px;
+  }
+
+  &__input {
+    width: 280px;
+    padding: 16px 0 17px 16px;
+    background: white;
+    border: none;
+  }
+
+  &__button {
+    width: 140px;
+    background: $black;
+    color: white;
+    height: 50px;
+    font-weight: 700;
+  }
+
+  &__signup-sucess {
+    text-align: center;
+
+    p {
+      color: $dark;
+    }
+
+    button {
+      margin-top: 16px;
+      background: $black;
+      color: white;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 14px;
+      width: 328px;
+      height: 48px;
+    }
+  }
+
+  .form-group {
+    &--danger {
+      
+      .input-group input {
+        border: 2px solid $red;
+      }
+      
+      .input-group__message {
+        color: $red;
+        visibility: visible;
+      }
+    
+      button {
+        background: $dark;
+      }
+    }
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+
+    input {
+      border: 2px solid transparent;
+
+      &:focus {
+        outline: none;
+        border: 2px solid $dark-grey;
+      }
+    }
+
+    &__message {
+      visibility: hidden;
+    }
+  }
+}
