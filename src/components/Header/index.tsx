@@ -4,7 +4,6 @@ import SearchInput from './SearchInput';
 import CartHeader from './HeaderCart';
 
 import MenuIcon from '../../assets/menu-icon.svg';
-import Logo from '../../assets/corebiz.svg';
 import UserIcon from '../../assets/user-icon.svg';
 import './styles.scss';
 
@@ -17,10 +16,10 @@ export default function Header(): JSX.Element {
         </div>
 
         <div className='header__logo'>
-          <Logo />
+          <img src='/1e617ac05a7fddfc1f24.png' />
         </div>
 
-        <div className='header__search--descktop'>
+        <div className='header__search--desktop'>
           <SearchInput />
         </div>
 
@@ -34,7 +33,7 @@ export default function Header(): JSX.Element {
         <CartHeader />
       </div>
 
-      <div className='container'>
+      <div className='header__search--mobile container'>
         <SearchInput />
       </div>
     </div>

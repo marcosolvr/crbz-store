@@ -4,13 +4,6 @@
 .header {
   height: 80px;
 
-  @media (min-width: $mobile) {
-    &__menu--mobile,
-    &__search--mobile {
-      display: none;
-    }
-  }
-
   .container {
     display: flex;
     justify-content: space-between;
@@ -20,9 +13,13 @@
 
   &__logo {
     flex: 2;
+
+    img {
+      width: 170px;
+    }
   }
 
-  &__search--descktop {
+  &__search--desktop {
     flex: 4;
     margin-right: 44px;
   }
@@ -37,6 +34,45 @@
     svg {
       vertical-align: sub;
       margin-right: 6px;
+    }
+  }
+
+  @media (min-width: $mobile) {
+    &__menu--mobile,
+    &__search--mobile {
+      display: none !important;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    padding: 7px 0;
+
+    &__search--desktop,
+    &__account {
+      display: none;
+    }
+    
+    .container {
+      height: unset;
+    } 
+
+    &__menu--mobile,
+    &__logo {
+      flex: unset;
+    }
+
+    &__menu--mobile {
+      margin-top: 8px;
+    }
+
+    &__logo {
+      img {
+        width: 109px;
+      }
+    }
+
+    &__search--mobile {
+      margin-top: 8px !important;
     }
   }
 }
