@@ -9,7 +9,6 @@
     "jsx": "react",
     "noEmit": true,    
     "sourceMap": true,
-    "plugins": [{ "name": "typescript-plugin-css-modules" }],
     /* Strict Type-Checking Options */
     "strict": true,
     "noImplicitAny": true,
