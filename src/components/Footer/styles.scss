@@ -1,12 +1,12 @@
-@import "../../styles/Tema.module.scss";
+@import "../../styles/tema.scss";
+@import "../../styles/variaveis";
 
 .footer {
-  background: black;
+  background: $black;
   color: white;
   padding: 25px 0;
   
   &__container {
-    @extend %container;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,7 @@
     font-weight: 600;
     font-size: 12px;
     background: white;
-    color: black;
+    color: $black;
     padding: 0 17px;
     text-transform: uppercase;
 
@@ -74,7 +74,7 @@
     }
   }
 
-  @media (max-width:$mobile) {
+  @media (max-width: $mobile) {
     &__container {
       flex-direction: column;
       align-items: flex-start;

@@ -5,13 +5,13 @@ import HeadsetIcon from '../../assets/icon-headset.svg';
 import MailIcon from '../../assets/icon-mail.svg';
 import CorebizTag from '../../assets/corebiz-tag.svg';
 import VtexTag from '../../assets/vtex-tag.svg';
-import styles from './Footer.module.scss';
+import './styles.scss';
 
 export default function Footer() {
   return (
-    <div className={styles.footer}>
-      <div className={styles.footer__container}>
-        <section className={styles.footer__location}>
+    <div className='footer'>
+      <div className='footer__container container'>
+        <section className='footer__location'>
           <h3>Localização</h3>
           <p>Avenida Andrômeda, 2000. Bloco 6 e 8</p>
           <p>Alphavile SP</p>
@@ -19,31 +19,31 @@ export default function Footer() {
           <p>+55 11 3090 1039</p>
         </section>
 
-        <div className={styles.footer__contact}>
+        <div className='footer__contact'>
           <a href="#0" className={classNames({
-            [styles.footer__button]: true,
-            [styles.footer__button__mail]: true,
+            'footer__button': true,
+            'footer__button__mail': true,
           })}>
             <MailIcon />
             Entre em contato
           </a>
 
           <a href="#0" className={classNames({
-            [styles.footer__button]: true,
-            [styles.footer__button__phone]: true,
+            'footer__button': true,
+            'footer__button__phone': true,
           })}>
             <HeadsetIcon />
             Fale com o nosso consultor online
           </a>
         </div>
 
-        <div className={styles['footer__tags-block']}>
-          <div className={styles.footer__tag}>
+        <div className='footer__tags-block'>
+          <div className='footer__tag'>
             <span>Created by</span>
             <CorebizTag />
           </div>
 
-          <div className={styles.footer__tag}>
+          <div className='footer__tag'>
             <span>Powered by</span>
             <VtexTag />
           </div>
