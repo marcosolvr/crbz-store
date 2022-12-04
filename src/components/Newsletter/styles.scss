@@ -6,15 +6,6 @@
   padding: 24px 0 16px 0;
   height: 146px;
   
-  h2,
-  h3,
-  p,
-  span,
-  input,
-  button {
-    font-family: 'Lato', sans-serif;
-  }
-  
   h2 {
     font-size: 22px;
   }
@@ -69,17 +60,7 @@
   }
 
   .form-group {
-    &--danger {
-      
-      .input-group input {
-        border: 2px solid $red;
-      }
-      
-      .input-group__message {
-        color: $red;
-        visibility: visible;
-      }
-    
+    &--danger {    
       button {
         background: $dark;
       }
@@ -103,6 +84,17 @@
 
     &__message {
       visibility: hidden;
+    }
+
+    &--danger {
+      input {
+        border: 2px solid $red;
+      }
+      
+      .input-group__message {
+        color: $red;
+        visibility: visible;
+      }
     }
   }
 
