@@ -1,6 +1,32 @@
+@import "./breakpoints";
+@import "./variaveis";
+
 .container {
   width: 100%;
   max-width: 1150px;
   padding: 0 18px;
   margin: 0 auto;
+}
+
+.alice-carousel__dots {
+  position: absolute;
+  margin: 0 !important;
+  width: 100%;
+
+  &-item {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: $dark-grey !important;
+
+    &.__active {
+      background-color: $red !important;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    &-item {
+      width: 7px !important;
+      height: 7px !important;
+    }
+  }
 }

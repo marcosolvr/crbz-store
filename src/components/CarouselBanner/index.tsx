@@ -54,15 +54,17 @@ const items = [
   </div>,
 ];
 
-export default function CarouselBanner() {
+export default function CarouselBanner(): JSX.Element {
   return (
-    <AliceCarousel
-      mouseTracking 
-      items={items} 
-      disableButtonsControls={true}
-      infinite={true}
-      autoPlay={true}
-      autoPlayInterval={10000}
-    />
+    <div className='carousel-banner'>
+      <AliceCarousel
+        mouseTracking
+        items={items}
+        disableButtonsControls={true}
+        infinite={true}
+        autoPlay={true}
+        autoPlayInterval={10000}
+      />
+    </div>
   );
 }
