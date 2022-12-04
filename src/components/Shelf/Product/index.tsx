@@ -2,7 +2,12 @@ import React from 'react';
 import { IProduct } from '../../../types/product';
 import './styles.scss';
 
-export default function Product(product: IProduct): JSX.Element {
+interface Props {
+  product: IProduct
+  addProductOnCart: (product: IProduct) => void
+}
+
+export default function Product({ product, addProductOnCart }: Props): JSX.Element {
   function formatPrice(value: number): string {
     const NumberFormat = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
     const priceFormatted = NumberFormat.format(value / 100);
@@ -33,7 +38,12 @@ export default function Product(product: IProduct): JSX.Element {
               : null}
           </p>
         </div>
-        <button className='product__buy-buton'>Comprar</button>
+        <button
+          className='product__buy-buton'
+          onClick={() => addProductOnCart(product)}
+        >
+          Comprar
+        </button>
       </div>
     </div>
   );
