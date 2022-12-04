@@ -11,13 +11,13 @@ import { ProductContextProvider } from './context/ProductContext';
 export function App(): JSX.Element {
   return (
     <ProductContextProvider>
-      <>
+      <React.StrictMode>
         <Header />
         <CarouselBanner />
         <Shelf />
         <Newsletter />
         <Footer />
-      </>
+      </React.StrictMode>
     </ProductContextProvider>
   );
 }
