@@ -5,7 +5,7 @@ export interface IOrder {
 }
 
 export interface IOrderContext {
-  order: IOrder
+  order: IOrder | undefined
   setOrder: React.Dispatch<React.SetStateAction<IOrder | undefined>>
 }
 
