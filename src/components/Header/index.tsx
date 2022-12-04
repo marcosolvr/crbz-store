@@ -2,7 +2,6 @@ import React from 'react';
 
 import SearchInput from './SearchInput';
 import CartHeader from './HeaderCart';
-
 import MenuIcon from '../../assets/menu-icon.svg';
 import UserIcon from '../../assets/user-icon.svg';
 import './styles.scss';
@@ -15,9 +14,7 @@ export default function Header(): JSX.Element {
           <MenuIcon />
         </div>
 
-        <div className='header__logo'>
-          <img src='/1e617ac05a7fddfc1f24.png' />
-        </div>
+        <div className='header__logo'></div>
 
         <div className='header__search--desktop'>
           <SearchInput />

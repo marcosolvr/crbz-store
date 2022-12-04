@@ -1,5 +1,6 @@
 import React from 'react';
 import { IProduct } from '../../../types/product';
+import Rating from './Rating';
 import './styles.scss';
 
 interface Props {
@@ -23,7 +24,7 @@ export default function Product({ product, addProductOnCart }: Props): JSX.Eleme
 
       <div className='product__body'>
         <a className='product__name'>{product.productName}</a>
-        <div className='product__ratings'>{product.stars}</div>
+        <div className='product__ratings'><Rating stars={product.stars} /></div>
 
         <div className='product__price'>
           <div className='product__list-price'>

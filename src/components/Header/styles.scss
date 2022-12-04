@@ -13,10 +13,10 @@
 
   &__logo {
     flex: 2;
-
-    img {
-      width: 170px;
-    }
+    background-image: url('../../assets/corebiz.png');
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 41px;
   }
 
   &__search--desktop {
@@ -66,9 +66,9 @@
     }
 
     &__logo {
-      img {
-        width: 109px;
-      }
+      width: 102px;
+      height: 25px;
+      background-size: 100%;
     }
 
     &__search--mobile {

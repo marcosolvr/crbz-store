@@ -51,11 +51,13 @@
     color: #7A7A7A;
   }
 
-  &__ratings {}
+  &__ratings {
+    width: fit-content;
+    margin: 6px auto;
+  }
 
   &__price {
     color: $black;
-    margin-top: 16px;
   }
 
   &__list-price,
